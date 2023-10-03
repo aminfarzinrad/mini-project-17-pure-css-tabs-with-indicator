@@ -43,7 +43,39 @@ body{
     align-items: center;
     border-radius: 5px;
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    font-size: 17px;
 }
 .label:hover{
     background-color: rgba(23, 162, 184, 0.3);
+}
+.active{
+    background-color: #17a2b8;
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;    
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    transition: all 0.3s ease;
+}
+.input-2#home:checked ~ nav label.home-2,
+.input-2#blog:checked ~ nav label.blog-2,
+.input-2#code:checked ~ nav label.code-2,
+.input-2#help:checked ~ nav label.help-2,
+.input-2#about:checked ~ nav label.about-2{
+    color: #fff;
+}
+.input-2#blog:checked ~ nav .active{
+    left: 103px;
+}
+.input-2#code:checked ~ nav .active{
+    left: 203px;
+}
+.input-2#help:checked ~ nav .active{
+    left: 303px;
+}
+.input-2#about:checked ~ nav .active{
+    left: 406px;
 }

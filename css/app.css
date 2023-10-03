@@ -79,3 +79,21 @@ body{
 .input-2#about:checked ~ nav .active{
     left: 406px;
 }
+.title_content{
+    font-size: 21px;
+    margin: 30px 0 10px 0;
+    font-weight: 500;
+}
+.text_content{
+    text-align: justify;
+}
+.content{
+    display: none;
+}
+.input-2#home:checked ~ .content_tabs .content_home,
+.input-2#blog:checked ~ .content_tabs .content_blog,
+.input-2#code:checked ~ .content_tabs .content_code,
+.input-2#help:checked ~ .content_tabs .content_help,
+.input-2#about:checked ~ .content_tabs .content_about{
+    display: block;
+}

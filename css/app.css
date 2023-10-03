@@ -20,3 +20,30 @@ body{
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
 }
+.title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    position: relative;
+}
+.label{
+    color: #17a2b8;
+    cursor: pointer;
+    height: 100%;
+    width: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.label:hover{
+    background-color: rgba(23, 162, 184, 0.3);
+}
